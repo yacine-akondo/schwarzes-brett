@@ -1,11 +1,86 @@
 {
-  "generated_at": "2026-06-06T00:17:10.054625",
-  "count": 1,
+  "generated_at": "2026-06-05T22:30:55.010104+00:00",
+  "count": 3,
   "quests": [
     {
       "title": "Warte einen Moment!",
-      "description": "Im Dorf Gaville verschwinden immer wieder Gegenstände. Am anfang waren es nur Heu, Melonen oder Töpfe, aber nun verschwinden ganze Betten, Stücke der Wand oder teile des Bodens. Die Bewohner der Stadt sind als außerordentlich gute Händler bekannt, aber sie sind keine Kämpfer oder Abenteurer. Deswegen zahlen sie euch große Mengen an Geld um das ganze aufzuklären. (Achtung Goofy) Wichtige Charaktere/Gegner: Elementals, Aberratios",
-      "length": "Kurz"
+      "description": "Im Dorf Gaville verschwinden immer wieder Gegenstände. Am anfang waren es nur Heu, Melonen oder Töpfe, aber nun verschwinden ganze Betten, Stücke der Wand oder teile des Bodens. Die Bewohner der Stadt sind als außerordentlich gute Händler bekannt, aber sie sind keine Kämpfer oder Abenteurer. Deswegen zahlen sie euch große Mengen an Geld um das ganze aufzuklären.",
+      "level": "8-10",
+      "length": "Medium",
+      "reward": "große Mengen an Geld",
+      "hooks": [],
+      "characters": [
+        "Elementals",
+        "Aberratios"
+      ],
+      "progression": [],
+      "notes": "Achtung Goofy",
+      "tags": [
+        "Mysterium",
+        "Gegenstände",
+        "Dorf",
+        "Elementare",
+        "Aberrationen"
+      ]
+    },
+    {
+      "title": "Auf halbem Weg in die Ewigkeit",
+      "description": "Die Ereignisse in der Nähe Balericas spitzen sich zu. Deine Abenteurerfreunde berichten von beunruhigenden Ereignissen, dass du kaum noch mitkommst. Sie scheinen irgendwie zusammenzuhängen, du weißt nur noch nicht wie. Nur eines weißt du: Ein Warforged namens Terminus steht im Mittelpunkt. Mittlerweile erkennt die Gilde auch eine Gefahr und verlässt sich auf euch renommierte Abenteurer, dieses Rätsel zu lüften. Ihr müsst nur noch abstimmen, wie ihr an die Sache rangehen wollt.",
+      "level": "5-9",
+      "length": "Medium",
+      "reward": "Turnierpreis, Kopfgeld bei der Gilde",
+      "hooks": [
+        {
+          "text": "Terminus bei den Flaming Fists infiltrieren durch Dragobeet Jr. Teamwettkampf"
+        },
+        {
+          "text": "Dämonin aufhalten, die mit Terminus kooperiert und ihr Kopfgeld abholen"
+        },
+        {
+          "text": "Professor Timur aufsuchen, um das Buch mit hochkomplizierten Formeln zu entziffern"
+        }
+      ],
+      "characters": [
+        "Terminus",
+        "Dragobeet Jr.",
+        "Flaming Fists",
+        "Dämonin",
+        "Prof. Timur",
+        "Gilde"
+      ],
+      "progression": [],
+      "notes": "Gewählte Pfade beeinflussen den Verlauf der Story. Das Abenteuer bleibt bestehen, solange nicht alle Punkte abgearbeitet worden. Welche Pfade bestritten worden, hat Einfluss auf die anderen Pfade.",
+      "tags": [
+        "Rätsel",
+        "Warforged",
+        "Turnier",
+        "Gilde",
+        "Dämonin",
+        "Balericas"
+      ]
+    },
+    {
+      "title": "Die Freude der extradimensionalen Räume",
+      "description": "Der Wirt vom Wizards Watering Hole, Admindium, braucht wieder Hilfe für seine Taverne. Dieses Mal nicht in Form von Aushilfskellnern, sondern... naja nennen wir es Klempnern. Der extradimensionale Riss, welcher von der Taverne für Müllentsorgung verwendet wird, funktioniert nicht mehr richtig. Da beim letzten Mal Abenteurer anheuern so gut funktioniert hat, hofft Admindium, dass Ihr ihn auch dieses Mal unterstützen könnt.",
+      "level": "1-4",
+      "length": "Medium",
+      "reward": "",
+      "hooks": [],
+      "characters": [
+        "Admindium",
+        "Vampire"
+      ],
+      "progression": [
+        "Conviction ++"
+      ],
+      "notes": "",
+      "tags": [
+        "Taverne",
+        "Extradimensional",
+        "Reparatur",
+        "Abenteuer",
+        "Müll"
+      ]
     }
   ]
 }
