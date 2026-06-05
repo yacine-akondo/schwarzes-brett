@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-01-01T12:00:00+00:00",
+  "count": 5,
+  "quests": [
+    {
+      "title": "Halfway to Eternity",
+      "level": "5-9",
+      "length": "Long",
+      "description": "Events near Balericas are escalating. Your adventuring companions report disturbing incidents faster than you can keep track. They seem somehow connected, but you can't yet see how. One thing is certain: a Warforged named Terminus is at the center of it all. The Guild has finally recognized the danger and relies on you renowned adventurers to unravel this mystery. You need only decide how to approach the matter.",
+      "reward": "",
+      "hooks": [
+        { "num": 1, "text": "Terminus is a member of the Flaming Fists?! There must be a larger plan at work. Fortunately, Dragobeet Jr. is organizing a team tournament soon – the winner gets a personal wish fulfilled, and all Flaming Fists will participate. A perfect way to get closer to the secret and snag the tournament prize." },
+        { "num": 2, "text": "The wanted posters mention a demoness who cooperates with Terminus – and lately witness reports of her sightings have been piling up. Whatever she wants, it's hardly benevolent. Stop her and collect her bounty from the Guild." },
+        { "num": 3, "text": "Remember that book full of complex formulae that Terminus desperately wanted? If anyone can decipher its contents, it's Prof. Timur. Pay him a visit – maybe he's discovered something new, and you can earn his favor." }
+      ],
+      "characters": ["Terminus (Warforged)", "Dragobeet Jr.", "Flaming Fists", "The Demoness", "Prof. Timur"],
+      "progression": [],
+      "notes": "Your choices here will influence the story's direction. This adventure persists until all points are resolved; the paths you take will affect the remaining options.",
+      "tags": ["Warforged", "Tournament", "Bounty", "Intrigue", "Mystery", "Branching"]
+    },
+    {
+      "title": "Road to Drakkenheim",
+      "level": "5-9",
+      "length": "Short",
+      "description": "Drakkenheim was destroyed by the Unmaking. The city was once known as the center of modern magic. Rumors claim the ruins of the city were left behind by the forces of the dark elf army.",
+      "reward": "",
+      "hooks": [
+        { "num": 1, "text": "Perhaps there are survivors? In these dark times, we must help anyone who needs it!" },
+        { "num": 2, "text": "Drakkenheim was a jewel of the Forgotten Realms. I've always wanted to see the magical metropolis – even in ruins, I must explore it!" },
+        { "num": 3, "text": "The dark elves surely didn't take everything. A whole city full of magical artifacts, unguarded treasure vaults, abandoned coffers overflowing with gold?!" },
+        { "num": 4, "text": "Drakkenheim was once the birthplace of the Purple Dragon Knights. They must be there – time for revenge!" }
+      ],
+      "characters": ["Sylvara the Amethyst Dragon", "Icarus", "Dragon God Rher", "Purple Dragon Knights"],
+      "progression": ["Unmaking ++", "Divine Influence ++"],
+      "notes": "",
+      "tags": ["Ruins", "Dragon", "Treasure Hunt", "Revenge", "Exploration", "Magic"]
+    },
+    {
+      "title": "Terrible Hospitality",
+      "level": "1-4",
+      "length": "Short",
+      "description": "The city of Bakamal is celebrating. Their recent victory over the dark elves has spread far and wide. King Nosramus has received an invitation from Baroness von Rosewood – also part of the Lords' Alliance – to celebrate the success in battle. The King's forces are wounded and weary, yet he still wishes to accept the invitation. He seeks adventurers to accompany him as bodyguards.",
+      "reward": "",
+      "hooks": [],
+      "characters": ["King Nosramus", "Baroness von Rosewood", "Vampires", "Dark Elves"],
+      "progression": ["Divine Influence --"],
+      "notes": "",
+      "tags": ["Escort", "Nobility", "Festivity", "Vampires", "Politics"]
+    },
+    {
+      "title": "King of the World",
+      "level": "1-4",
+      "length": "Long",
+      "description": "The King of Beiwater is in grave danger. After the dragon's attack and the raid on the royal treasury, he is in dire straits. A letter from the self-proclaimed 'True King' announces an attack on the city. Without his army, the city is defenseless. Prevent its destruction.",
+      "reward": "",
+      "hooks": [],
+      "characters": ["King of Beiwater", "The 'True King'", "The Dragon"],
+      "progression": ["Unmaking ++"],
+      "notes": "This adventure unlocks 2 additional quests.",
+      "tags": ["Siege", "Dragon", "Succession", "Defense", "Politics"]
+    },
+    {
+      "title": "The Tales of the Ugly One",
+      "level": "5-7",
+      "length": "Long",
+      "description": "A long path of suffering, one that could only be conceived by someone very ugly and foul-smelling.",
+      "reward": "",
+      "hooks": [],
+      "characters": [],
+      "progression": ["Unmaking ++"],
+      "notes": "",
+      "tags": ["Mystery", "Humor", "Enigmatic"]
+    }
+  ]
+}
