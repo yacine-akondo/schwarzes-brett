@@ -1,45 +1,46 @@
 {
-  "generated_at": "2026-06-06T07:41:32.385230+00:00",
+  "generated_at": "2026-06-06T07:54:39.366200+00:00",
   "count": 14,
   "quests": [
     {
       "title": "Die Geschichten des Hässlichen",
       "description": "Ein langer Pfad des Leides, den sich nur jemand sehr hässliches und stinkendes ausgedacht haben kann.",
       "level": "5-7",
-      "length": "Medium",
+      "length": "Long",
       "reward": "",
       "hooks": [],
       "characters": [],
       "progression": [
         "Unmaking ++"
       ],
-      "notes": "",
+      "notes": "Progression quest - unlocks new adventures and grants more XP but is dangerous and deadly",
       "tags": [
-        "Suffering",
-        "Dark",
-        "Progression"
+        "suffering",
+        "dark",
+        "progression",
+        "dangerous"
       ]
     },
     {
       "title": "König der Welt",
       "description": "Der König Beiwassers ist in großer Gefahr. Nach dem Angriff des Drachens und dem Raubzug auf die Königliche Schatzkammer, ist er in großer Not. Ein Brief von dem selbsternannten \"Wahren Königs\" kündigt einen Angriff auf die Stadt an. Ohne seine Arme ist die Stadt in großer Gefahr. Verhindere die Zerstörung der Stadt.",
       "level": "1-4",
-      "length": "Medium",
+      "length": "Long",
       "reward": "",
       "hooks": [],
       "characters": [
-        "König Beiwassers",
-        "Wahrer König"
+        "King Beiwater"
       ],
       "progression": [
         "Unmaking ++",
-        "2 neue Abenteuer"
+        "unlocks 2 additional quests"
       ],
-      "notes": "",
+      "notes": "Progression quest - unlocks 2 new adventures",
       "tags": [
-        "Defense",
-        "Royalty",
-        "Progression"
+        "king",
+        "dragon",
+        "city defense",
+        "danger"
       ]
     },
     {
@@ -51,45 +52,45 @@
       "hooks": [],
       "characters": [],
       "progression": [
-        "Startlevel permanent +3",
         "Unmaking ++",
-        "Divine Influence --"
+        "Divine Influence --",
+        "permanently raises starting level to 3"
       ],
-      "notes": "Progression Quest",
+      "notes": "Progression quest - permanently affects world state",
       "tags": [
-        "Ancient Power",
-        "Danger",
-        "Permanent Change"
+        "ancient power",
+        "dangerous",
+        "progression",
+        "dark"
       ]
     },
     {
       "title": "Furchtbare Gastfreundschaft",
       "description": "Die Stadt Bakamal feiert. Ihr letzter Sieg über die Dunkelelfen hat eine große Runde gemacht, Ihr König Nosramus hat eine Einladung von Baronin von Rosewood, welche ebenso Teil der Lords Alliance ist, erhalten, um den Erfolg in der Schlacht zu feiern. Die Streitkräfte des Königs sind verletzt und ermüdet, doch der König möchte trotzdem die Einladung annehmen. Deswegen möchte der König, dass Abenteurer ihn als Leibwachen begleiten.",
       "level": "1-4",
-      "length": "Medium",
+      "length": "Short",
       "reward": "",
       "hooks": [],
       "characters": [
-        "Nosramus",
-        "Baronin von Rosewood",
-        "Vampire",
-        "Dunkelelfen"
+        "King Nosramus",
+        "Baronin von Rosewood"
       ],
       "progression": [
         "Divine Influence --"
       ],
       "notes": "",
       "tags": [
-        "Bodyguard",
-        "Politics",
-        "Celebration"
+        "bodyguard",
+        "politics",
+        "dark elves",
+        "celebration"
       ]
     },
     {
       "title": "Straße nach Drakkenheim",
       "description": "Drakkenheim wurde durch das Unmaking zerstört. Die Stadt war einst als das Zentrum moderner Magie bekannt. Gerüchte behaupten die Ruinen der Stadt wurden von den Mächten der Dunkelelfen Armee zurückgelassen.",
       "level": "5-9",
-      "length": "Medium",
+      "length": "Short",
       "reward": "",
       "hooks": [
         {
@@ -117,45 +118,48 @@
       ],
       "notes": "",
       "tags": [
-        "Exploration",
-        "Magic",
-        "Ruins"
+        "magic",
+        "ruins",
+        "exploration",
+        "dark elves"
       ]
     },
     {
       "title": "Eine simple Hafenquest",
       "description": "Eurer Abenteuer hat euch an die Grenzen des Kontinents an einen kleinen namenlosen Hafen gebracht. Ein einfacher Händler, Old Man Bhan braucht jemanden, der für eine Nacht auf seine Fracht aufpasst. Eine Möglichkeit für schnelles Geld, oder?",
-      "level": "Unknown",
+      "level": "1-3",
       "length": "Medium",
-      "reward": "",
+      "reward": "Gold",
       "hooks": [],
       "characters": [
         "Old Man Bhan"
       ],
       "progression": [],
-      "notes": "Kann semi-permanente Auswirkungen auf die Zhentarim haben",
+      "notes": "Can have semi-permanent effects on the Zhentarim",
       "tags": [
-        "Harbor",
-        "Guard Duty",
-        "Zhentarim"
+        "harbor",
+        "merchants",
+        "simple job",
+        "gold"
       ]
     },
     {
       "title": "Im Schlangennest",
       "description": "Durch die herausragende Arbeit zweier unserer Agenten konnte eine Mine der Zhentarim ausfindig gemacht werden. Es wäre doch schade, wenn ein paar Abenteurer zufällig auf diese Mine stoßen würden und sie von den Klauen dieser Banditen befreien würden.",
       "level": "3-5",
-      "length": "Medium",
+      "length": "Short",
       "reward": "",
       "hooks": [],
       "characters": [
-        "Lord's Alliance"
+        "Lord's Alliance agents"
       ],
       "progression": [],
-      "notes": "Quest von Lord's Alliance",
+      "notes": "Letter from Lord's Alliance",
       "tags": [
-        "Zhentarim",
-        "Mine",
-        "Liberation"
+        "zhentarim",
+        "mine",
+        "bandits",
+        "liberation"
       ]
     },
     {
@@ -163,13 +167,13 @@
       "description": "Die Spiele beginnen! Auch in diesen dunklen Zeiten bietet das Haus Clawthorne die Owl Games an. Abenteurer, Söldner und sogar der ein oder andere Adliger nehmen an diesen Spielen teil. Nicht nur für Prestige und Reichtum, sondern auch um einen Blick auf das legendäre Haus der Eulen zu erlangen.",
       "level": "3-8",
       "length": "Medium",
-      "reward": "Eigenes Stück Land und erhebliches Startkapital für Basis",
+      "reward": "Land, substantial starting capital",
       "hooks": [
         {
-          "text": "Eine Einladung zu den Owl Games? Nur ein Idiot würde diese Einmal-im-Leben Gelegenheit ausschlagen. Solange man nichts zwielichtiges untertreibt, besteht immerhin keine Gefahr."
+          "text": "Eine Einladung zu den Owl Games?! Nur ein Idiot würde diese Einmal-im-Leben Gelegenheit ausschlagen. Natürlich nimmst du Teil. Solange man nichts zwielichtiges untertreibt, besteht immerhin keine Gefahr."
         },
         {
-          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Die Herkunft jeder Münze ist sorgfältig dokumentiert und sogar versteuert... Deine Auftraggeberin glaubt den Clawthornes nicht für eine Sekunde. Nimm an den Spielen teil und freue dich auf deine Belohnung für belastende Informationen."
+          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Die Herkunft jeder Münze ist sorgfältig dokumentiert und sogar versteuert... Deine Auftraggeberin glaubt den Clawthornes nicht für eine Sekunde. Nimm an den Spielen teil und freue dich, für jede belastende Information die du zu den Clawthornes findest, auf deine Belohnung."
         },
         {
           "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Einen Reichtum, der nur darauf wartet, ausgegeben zu werden."
@@ -184,62 +188,64 @@
       "progression": [],
       "notes": "",
       "tags": [
-        "Competition",
-        "Investigation",
-        "Wealth"
+        "games",
+        "prestige",
+        "wealth",
+        "intrigue"
       ]
     },
     {
       "title": "Auf halbem Weg in die Ewigkeit",
       "description": "Die Ereignisse in der Nähe Balericas spitzen sich zu. Deine Abenteurerfreunde berichten von beunruhigenden Ereignissen, dass du kaum noch mitkommst. Sie scheinen irgendwie zusammenzuhängen, du weißt nur noch nicht wie. Nur eines weißt du: Ein Warforged namens Terminus steht im Mittelpunkt. Mittlerweile erkennt die Gilde auch eine Gefahr und verlässt sich auf euch renommierte Abenteurer, dieses Rätsel zu lüften.",
       "level": "5-9",
-      "length": "Medium",
-      "reward": "",
+      "length": "Long",
+      "reward": "Guild reward",
       "hooks": [
         {
-          "text": "Terminus ist Mitglied bei den Flaming Fists. Dragobeet Jr. richtet einen Teamwettkampf aus mit Wunsch als Preis. Alle Flaming Fists nehmen teil."
+          "text": "Terminus ist Mitglied bei den Flaming Fists?! Da muss irgendein größerer Plan hinterstecken. Wie gut, dass Dragobeet Jr. bald einen Teamwettkampf ausrichtet. Gerüchte sagen, dass der Sieger einen Wunsch Dragobeet Jr. persönlich erfüllt bekommt. Zudem wurde bestätigt, dass alle Flaming Fists an diesem Turnier teilnehmen."
         },
         {
-          "text": "Auf Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Vermehrt Augenzeugenberichte von Sichtungen. Kopfgeld bei der Gilde."
+          "text": "Auf den Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Und wie der Zufall es so will gab es in den letzten Tagen vermehrt Augenzeugenberichte von der Sichtung von einer Dämonin. Egal was sie will, es kann ja wohl nichts wohlwollendes sein. Du kannst sie aufhalten und ihr Kopfgeld bei der Gilde abholen."
         },
         {
-          "text": "Ein Buch voller hochkomplizierter Formeln, die Terminus haben will. Prof. Timur könnte den Inhalt verstehen und über Neuheiten berichten."
+          "text": "War da nicht dieses Buch voller hochkomplizierter Formeln, die keiner entziffern kann und das Terminus unbedingt haben wollte? Ich meine wenn irgendwer seinen Inhalt verstehen kann, dann ja wohl Prof. Timur höchstpersönlich! Vielleicht hat er was neues herausgefunden."
         }
       ],
       "characters": [
         "Terminus",
         "Flaming Fists",
         "Dragobeet Jr.",
-        "Prof. Timur",
-        "Dämonin"
+        "Dämonin",
+        "Prof. Timur"
       ],
       "progression": [],
-      "notes": "Gewählte Wege beeinflussen Verlauf und andere Pfade. Quest bleibt bestehen bis alle Punkte abgearbeitet.",
+      "notes": "Choice affects story progression - quest remains open until all paths completed",
       "tags": [
-        "Mystery",
-        "Warforged",
-        "Multi-path"
+        "mystery",
+        "warforged",
+        "demon",
+        "tournament"
       ]
     },
     {
       "title": "Die Freude der extradimensionalen Räume",
-      "description": "Der Wirt vom Wizards Watering Hole, Admindium, braucht wieder Hilfe für seine Taverne. Dieses Mal nicht in Form von Aushilfskellnern, sondern... naja nennen wir es Klempnern. Der extradimensionale Riss, welcher von der Taverne für Müllentsorgung verwendet wird, funktioniert nicht mehr richtig. Da beim letzten Mal Abenteurer anheuern so gut funktioniert hat, hofft Admindium, dass Ihr ihn auch dieses Mal unterstützen könnt.",
+      "description": "Der Wirt vom Wizards Watering Hole, Admindium, braucht wieder Hilfe für seine Taverne. Dieses Mal nicht in Form von Aushilfskellnern, sondern... naja nennen wir es Klempnern. Der extradimensionale Riss, welcher von der Taverne für Müllentsorgung verwendet wird, funktioniert nicht mehr richtig.",
       "level": "1-4",
       "length": "Medium",
       "reward": "",
       "hooks": [],
       "characters": [
-        "Admindium",
-        "Vampire"
+        "Admindium"
       ],
       "progression": [
         "Conviction ++"
       ],
       "notes": "",
       "tags": [
-        "Tavern",
-        "Repair",
-        "Magic"
+        "tavern",
+        "extradimensional",
+        "repairs",
+        "humor"
       ]
     },
     {
@@ -252,73 +258,73 @@
       "characters": [
         "Pash Ugnel",
         "Green Hags",
-        "Vampire"
+        "Fewin"
       ],
       "progression": [
-        "Divine Influence -- oder Divine Influence ++"
+        "Divine Influence --",
+        "Divine Influence ++"
       ],
-      "notes": "",
+      "notes": "Progression outcome varies",
       "tags": [
-        "Search",
-        "Missing Person",
-        "Divine"
+        "missing cleric",
+        "search",
+        "waterdeep",
+        "mystery"
       ]
     },
     {
       "title": "Geschichten von Anderswo: Daggerheart",
-      "description": "Der Sablewood ist ein uralter, gewaltiger Wald aus Bäumen, die sich Hunderte von Fuß hoch in den Himmel erheben. Man sagt, er sei älter als die Vergessenen Götter selbst. Dieses dichte Gehölz ist im gesamten Reich der Sterblichen bekannt, und viele Besucher stellen überrascht fest, dass die Geschichten, die sie für übertriebene Legenden hielten, in Wahrheit erschreckend real sind.",
+      "description": "Der Sablewood ist ein uralter, gewaltiger Wald aus Bäumen, die sich Hunderte von Fuß hoch in den Himmel erheben. Man sagt, er sei älter als die Vergessenen Götter selbst. Dieses dichte Gehölz ist im gesamten Reich der Sterblichen bekannt, und viele Besucher stellen überrascht fest, dass die Geschichten, die sie für übertriebene Legenden hielten, in Wahrheit erschreckend real sind. So weit das Auge reicht und noch weit darüber hinaus erstreckt sich ein endloses Meer aus Grün.",
       "level": "Unknown",
       "length": "Medium",
       "reward": "",
       "hooks": [],
       "characters": [],
       "progression": [],
-      "notes": "Quest aus Daggerheart System",
+      "notes": "From Daggerheart system",
       "tags": [
-        "Forest",
-        "Exploration",
-        "Legend"
+        "forest",
+        "ancient",
+        "legends",
+        "exploration"
       ]
     },
     {
       "title": "Geschichten von Anderswo: DSA",
-      "description": "Während das Mittelreich gegen den Fürstkomtur Helme Haffax zieht, kämpft Festum, die Handelsstadt am Perlenmeer, mit ganz eigenen Problemen. Altes Brauchtum wird zum Zankapfel und die überlieferte Tradition der Atmaskottjenumzüge scheint die Stadt zu spalten. Besonders die mit Menschenhaut bespannte Thorwalertrommel erhitzt die Gemüter und bald offenbaren sich tiefe Gräben zwischen den verschiedenen Bevölkerungsgruppen. Gardehauptmann Timpski setzt seine Hoffnungen in eine Gruppe gewitzter Helden, dieses Rätsel zu lüften.",
+      "description": "Während das Mittelreich gegen den Fürstkomtur Helme Haffax zieht, kämpft Festum, die Handelsstadt am Perlenmeer, im Phex 1038 BF mit ganz eigenen Problemen. Altes Brauchtum wird zum Zankapfel und die überlieferte Tradition der Atmaskottjenumzüge scheint die Stadt zu spalten. Besonders die mit Menschenhaut bespannte Thorwalertrommel erhitzt die Gemüter. Goblins, Thorwaler, Norbarden, Maraskaner, dazwischen die alteingesessenen Festumer - sie alle kamen bisher miteinander aus. Doch nun scheint die Harmonie empfindlich bedroht.",
       "level": "Unknown",
       "length": "Medium",
       "reward": "",
       "hooks": [],
       "characters": [
-        "Gardehauptmann Timpski",
-        "Goblins",
-        "Thorwaler",
-        "Norbarden",
-        "Maraskaner"
+        "Gardehauptmann Timpski"
       ],
       "progression": [],
-      "notes": "Quest aus DSA System",
+      "notes": "From DSA system - political and social crisis in Festum",
       "tags": [
-        "Politics",
-        "City Defense",
-        "Cultural Conflict"
+        "city politics",
+        "tradition",
+        "cultural conflict",
+        "leadership"
       ]
     },
     {
       "title": "Warte einen Moment!",
       "description": "Im Dorf Gaville verschwinden immer wieder Gegenstände. Am anfang waren es nur Heu, Melonen oder Töpfe, aber nun verschwinden ganze Betten, Stücke der Wand oder teile des Bodens. Die Bewohner der Stadt sind als außerordentlich gute Händler bekannt, aber sie sind keine Kämpfer oder Abenteurer. Deswegen zahlen sie euch große Mengen an Geld um das ganze aufzuklären.",
       "level": "8-10",
-      "length": "Medium",
-      "reward": "Große Mengen Geld",
+      "length": "Short",
+      "reward": "Large amount of gold",
       "hooks": [],
       "characters": [
-        "Elementals",
-        "Aberrations"
+        "Villagers of Gaville"
       ],
       "progression": [],
-      "notes": "Achtung Goofy",
+      "notes": "Achtung Goofy - comedic tone expected",
       "tags": [
-        "Mystery",
-        "Vanishing Objects",
-        "Humorous"
+        "mystery",
+        "strange disappearances",
+        "village",
+        "humorous"
       ]
     }
   ]
