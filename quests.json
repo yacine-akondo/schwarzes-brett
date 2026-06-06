@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T21:01:29.376445+00:00",
+  "generated_at": "2026-06-06T21:30:19.181500+00:00",
   "count": 14,
   "quests": [
     {
@@ -14,11 +14,6 @@
         "Unmaking ++"
       ],
       "notes": "",
-      "tags": [
-        "Leiden",
-        "Dunkelheit",
-        "Abenteuer"
-      ],
       "entities": []
     },
     {
@@ -30,15 +25,10 @@
       "hooks": [],
       "characters": [],
       "progression": [
-        "Unmaking ++",
+        "unmaking ++",
         "2 weitere Abenteuer freigeschaltet"
       ],
       "notes": "",
-      "tags": [
-        "Schutz",
-        "König",
-        "Stadt"
-      ],
       "entities": [
         {
           "name": "Beiwasser",
@@ -56,16 +46,11 @@
       "hooks": [],
       "characters": [],
       "progression": [
-        "Startlevel permanent auf 3 erhöht",
-        "Unmaking ++",
+        "Startlevel erhöht sich permanent auf 3",
+        "unmaking ++",
         "Divine Influence --"
       ],
       "notes": "",
-      "tags": [
-        "Macht",
-        "Verließ",
-        "Dunkelheit"
-      ],
       "entities": []
     },
     {
@@ -91,11 +76,6 @@
         "Divine Influence --"
       ],
       "notes": "",
-      "tags": [
-        "Schutz",
-        "Celebration",
-        "Intrige"
-      ],
       "entities": [
         {
           "name": "Bakamal",
@@ -171,11 +151,6 @@
         "Divine Influence ++"
       ],
       "notes": "",
-      "tags": [
-        "Erkundung",
-        "Magie",
-        "Zerstörung"
-      ],
       "entities": [
         {
           "name": "Drakkenheim",
@@ -183,19 +158,14 @@
           "kind": null
         },
         {
-          "name": "Unmaking",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/8593273",
-          "kind": "event"
-        },
-        {
-          "name": "Dunkelelfen Armee",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/8593258",
-          "kind": "organisation"
-        },
-        {
           "name": "Forgotten Realms",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8593546",
           "kind": "location"
+        },
+        {
+          "name": "Dunkelelfen",
+          "kanka_url": null,
+          "kind": null
         },
         {
           "name": "Sylvara der Amethyst Drache",
@@ -235,11 +205,6 @@
       ],
       "progression": [],
       "notes": "Dieses Abenteuer kann (semi-) permanente Auswirkungen auf die Zhentarim haben",
-      "tags": [
-        "Handel",
-        "Hafen",
-        "Schutz"
-      ],
       "entities": [
         {
           "name": "Old Man Bhan",
@@ -262,21 +227,16 @@
       "hooks": [],
       "characters": [],
       "progression": [],
-      "notes": "Ein Brief mit dem Siegel der Lord's Alliance",
-      "tags": [
-        "Zhentarim",
-        "Mine",
-        "Befreiung"
-      ],
+      "notes": "Quest kommt von der Lord's Alliance",
       "entities": [
-        {
-          "name": "Lord's Alliance",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/8593182",
-          "kind": "organisation"
-        },
         {
           "name": "Zhentarim",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8593207",
+          "kind": "organisation"
+        },
+        {
+          "name": "Lord's Alliance",
+          "kanka_url": "https://app.kanka.io/w/363682/entities/8593182",
           "kind": "organisation"
         }
       ]
@@ -286,7 +246,7 @@
       "description": "Die Spiele beginnen! Auch in diesen dunklen Zeiten bietet das Haus Clawthorne die Owl Games an. Abenteurer, Söldner und sogar der ein oder andere Adliger nehmen an diesen Spielen teil. Nicht nur für Prestige und Reichtum, sondern auch um einen Blick auf das legendäre Haus der Eulen zu erlangen.",
       "level": "3-8",
       "length": "Medium",
-      "reward": "Ein eigenes Stück Land und erhebliches Startkapital für eine eigene Basis",
+      "reward": "Ein eigenes Stück Land und ein erhebliches Startkapital. Perfekt für eine eigene Basis",
       "hooks": [
         {
           "text": "Eine Einladung zu den Owl Games?! Nur ein Idiot würde diese Einmal-im-Leben Gelegenheit ausschlagen Natürlich nimmst du Teil. Solange man nichts zwielichtiges untertreibt, besteht immerhin keine Gefahr."
@@ -295,7 +255,7 @@
           "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Die Herkunft jeder Münze ist sorgfältig dokumentiert und sogar versteuert... Deine Auftraggeberin glaubt den Clawthornes nicht für eine Sekunde. Nimm an den Spielen teil und freue dich, für jede belastende Inforamation die du zu den Clawthornes findest, auf deine Belohnung."
         },
         {
-          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Einen Reichtum, der nur darauf wartet, ausgegeben zu werden. *Hehehe…*"
+          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Einen Reichtum, der nur darauf wartet, ausgegeben zu werden."
         }
       ],
       "characters": [
@@ -317,11 +277,6 @@
       ],
       "progression": [],
       "notes": "",
-      "tags": [
-        "Spiele",
-        "Reichtum",
-        "Intrige"
-      ],
       "entities": [
         {
           "name": "Haus Clawthorne",
@@ -358,13 +313,13 @@
       "reward": "",
       "hooks": [
         {
-          "text": "Terminus ist Mitglied bei den Flaming Fists?! Da muss irgendein größerer Plan hinterstecken. Wie gut, dass Dragobeet Jr. bald einen Teamwettkampf ausrichtet. Gerüchte sagen, dass der Sieger einen Wunsch Dragobeet Jr. persönlich erfüllt bekommt. Zudem wurde bestätigt, dass alle Flaming Fists an diesem Turnier teilnehmen. Klingt nach einem super weg, dem Geheimnis etwas näher zu kommen und den Turnierpreis abzusahnen."
+          "text": "Terminus ist Mitglied bei den Flaming Fists?! Da muss irgendein größerer Plan hinterstecken. Wie gut, dass Dragobeet Jr. bald einen Teamwettkampf ausrichtet. Gerüchte sagen, dass der Sieger einen Wunsch Dragobeet Jr. persönlich erfüllt bekommt. Zudem wurde bestätigt, dass alle Flaming Fists an diesem Turnier teilnehmen."
         },
         {
-          "text": "Auf den Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Und wie der Zufall es so will gab es in den letzten Tagen vermehrt Augenzeugenberichte von der Sichtung von einer Dämonin. Egal was sie will, es kann ja wohl nichts wohlwollendes sein. Du kannst sie aufhalten und ihr Kopfgeld bei der Gilde abholen. Perfekter Plan, oder?"
+          "text": "Auf den Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Und wie der Zufall es so will gab es in den letzten Tagen vermehrt Augenzeugenberichte von der Sichtung von einer Dämonin. Egal was sie will, es kann ja wohl nichts wohlwollendes sein. Du kannst sie aufhalten und ihr Kopfgeld bei der Gilde abholen."
         },
         {
-          "text": "War da nicht dieses Buch voller hochkomplizierter Formeln, die keiner entziffern kann und das Terminus unbedingt haben wollte? Ich meine wenn irgendwer seinen Inhalt verstehen kann, dann ja wohl Prof. Timur höchstpersönlich! Vielleicht hat er was neues herausgefunden. Wir sollten ihm einen Besuch abstatten. Und vielleicht können wir ihm ja helfen und so etwas gut haben bei ihm?"
+          "text": "War da nicht dieses Buch voller hochkomplizierter Formeln, die keiner entziffern kann und das Terminus unbedingt haben wollte? Ich meine wenn irgendwer seinen Inhalt verstehen kann, dann ja wohl Prof. Timur höchstpersönlich! Vielleicht hat er was neues herausgefunden. Wir sollten ihm einen Besuch abstatten."
         }
       ],
       "characters": [
@@ -386,11 +341,6 @@
       ],
       "progression": [],
       "notes": "Das hier Gewählte hat Einfluss auf den Verlauf der Story. Das Abenteuer bleibt bestehen, solange nicht alle Punkte abgearbeitet worden. Welche Pfade bestritten worden, hat Einfluss auf die anderen Pfade.",
-      "tags": [
-        "Rätsel",
-        "Gilde",
-        "Gefahr"
-      ],
       "entities": [
         {
           "name": "Balerica",
@@ -399,6 +349,11 @@
         },
         {
           "name": "Terminus",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Gilde",
           "kanka_url": null,
           "kind": null
         },
@@ -437,11 +392,6 @@
         "Conviction ++"
       ],
       "notes": "",
-      "tags": [
-        "Taverne",
-        "Reparatur",
-        "Magie"
-      ],
       "entities": [
         {
           "name": "Wizards Watering Hole",
@@ -473,11 +423,6 @@
         "Divine Influence -- oder Divine Influence ++"
       ],
       "notes": "",
-      "tags": [
-        "Vermisst",
-        "Suche",
-        "Klerikerin"
-      ],
       "entities": [
         {
           "name": "Pash Ugnel",
@@ -506,14 +451,14 @@
       "characters": [],
       "progression": [],
       "notes": "",
-      "tags": [
-        "Wald",
-        "Erkundung",
-        "Legenden"
-      ],
       "entities": [
         {
           "name": "Sablewood",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Vergessenen Götter",
           "kanka_url": null,
           "kind": null
         },
@@ -540,11 +485,6 @@
       ],
       "progression": [],
       "notes": "",
-      "tags": [
-        "Tradition",
-        "Konflikt",
-        "Stadt"
-      ],
       "entities": [
         {
           "name": "Mittelreich",
@@ -552,7 +492,7 @@
           "kind": null
         },
         {
-          "name": "Fürstkomtur Helme Haffax",
+          "name": "Helme Haffax",
           "kanka_url": null,
           "kind": null
         },
@@ -563,8 +503,8 @@
         },
         {
           "name": "Perlenmeer",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/9300946",
-          "kind": "character"
+          "kanka_url": null,
+          "kind": null
         },
         {
           "name": "Atmaskottjenumzüge",
@@ -573,6 +513,26 @@
         },
         {
           "name": "Thorwalertrommel",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Goblins",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Thorwaler",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Norbarden",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Maraskaner",
           "kanka_url": null,
           "kind": null
         },
@@ -588,22 +548,9 @@
       "description": "Im Dorf Gaville verschwinden immer wieder Gegenstände. Am anfang waren es nur Heu, Melonen oder Töpfe, aber nun verschwinden ganze Betten, Stücke der Wand oder teile des Bodens. Die Bewohner der Stadt sind als außerordentlich gute Händler bekannt, aber sie sind keine Kämpfer oder Abenteurer. Deswegen zahlen sie euch große Mengen an Geld um das ganze aufzuklären.",
       "level": "8-10",
       "length": "Short",
-      "reward": "Große Mengen an Geld",
+      "reward": "Große Mengen Gold",
       "hooks": [],
-      "characters": [],
-      "progression": [],
-      "notes": "Achtung Goofy",
-      "tags": [
-        "Mysterium",
-        "Verschwinden",
-        "Dorf"
-      ],
-      "entities": [
-        {
-          "name": "Gaville",
-          "kanka_url": null,
-          "kind": null
-        },
+      "characters": [
         {
           "name": "Elementals",
           "kanka_url": null,
@@ -611,6 +558,15 @@
         },
         {
           "name": "Aberratios",
+          "kanka_url": null,
+          "kind": null
+        }
+      ],
+      "progression": [],
+      "notes": "Achtung Goofy",
+      "entities": [
+        {
+          "name": "Gaville",
           "kanka_url": null,
           "kind": null
         }
