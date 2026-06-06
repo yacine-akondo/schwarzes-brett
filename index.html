@@ -640,7 +640,6 @@
     border: 1px solid var(--chip-border); border-radius: 2px;
     padding: 2px 9px; background: var(--chip-bg);
   }
-  .chip.tag { font-style: italic; }
   .chip.link {
     color: var(--accent); text-decoration: none;
     border-color: var(--card-rule);
@@ -822,7 +821,6 @@
   function questCard(q, i) {
     const hooks = Array.isArray(q.hooks) ? q.hooks : [];
     const chars = Array.isArray(q.characters) ? q.characters : [];
-    const tags  = Array.isArray(q.tags) ? q.tags : [];
     const prog  = Array.isArray(q.progression) ? q.progression : [];
     const entities = Array.isArray(q.entities) ? q.entities : [];
 
@@ -844,22 +842,18 @@
       <div class="section-label">Wichtige Charaktere</div>
       <p class="chars">${chars.map(nameLink).join(" · ")}</p>` : "";
 
-    // "Schauplätze & Verweise": linked entities only, excluding anything
-    // already shown under characters (compared by normalized name).
+    // "Kanka Links": linked entities only, excluding anything already shown under characters (compared by normalized name).
     const charNames = new Set(chars.map(c => normName(entryName(c))));
     const refs = entities.filter(e =>
       e && typeof e === "object" && e.kanka_url &&
-      !charNames.has(normName(entryName(e))));
+      //!charNames.has(normName(entryName(e))));
+      true);
     const refsHtml = refs.length ? `
-      <div class="section-label">Schauplätze &amp; Verweise</div>
+      <div class="section-label">Kanka Links</div>
       <div class="chips">
         ${refs.map(e => `<a class="chip link" href="${escape(e.kanka_url)}" target="_blank" rel="noopener">${escape(entryName(e))}</a>`).join("")}
       </div>` : "";
 
-    const tagsHtml = tags.length ? `
-      <div class="chips">
-        ${tags.map(t => `<span class="chip tag">${escape(t)}</span>`).join("")}
-      </div>` : "";
 
     const notesHtml = (q.notes && String(q.notes).trim()) ? `
       <p class="notes">✦ ${escape(q.notes)}</p>` : "";
@@ -877,7 +871,6 @@
         ${hooksHtml}
         ${charsHtml}
         ${refsHtml}
-        ${tagsHtml}
         ${notesHtml}
       </article>`;
   }
@@ -1602,7 +1595,6 @@
     border: 1px solid var(--chip-border); border-radius: 2px;
     padding: 2px 9px; background: var(--chip-bg);
   }
-  .chip.tag { font-style: italic; }
   .chip.link {
     color: var(--accent); text-decoration: none;
     border-color: var(--card-rule);
@@ -1784,7 +1776,6 @@
   function questCard(q, i) {
     const hooks = Array.isArray(q.hooks) ? q.hooks : [];
     const chars = Array.isArray(q.characters) ? q.characters : [];
-    const tags  = Array.isArray(q.tags) ? q.tags : [];
     const prog  = Array.isArray(q.progression) ? q.progression : [];
     const entities = Array.isArray(q.entities) ? q.entities : [];
 
@@ -1813,15 +1804,11 @@
       e && typeof e === "object" && e.kanka_url &&
       !charNames.has(normName(entryName(e))));
     const refsHtml = refs.length ? `
-      <div class="section-label">Schauplätze &amp; Verweise</div>
+      <div class="section-label">Tags</div>
       <div class="chips">
         ${refs.map(e => `<a class="chip link" href="${escape(e.kanka_url)}" target="_blank" rel="noopener">${escape(entryName(e))}</a>`).join("")}
       </div>` : "";
 
-    const tagsHtml = tags.length ? `
-      <div class="chips">
-        ${tags.map(t => `<span class="chip tag">${escape(t)}</span>`).join("")}
-      </div>` : "";
 
     const notesHtml = (q.notes && String(q.notes).trim()) ? `
       <p class="notes">✦ ${escape(q.notes)}</p>` : "";
@@ -1839,7 +1826,6 @@
         ${hooksHtml}
         ${charsHtml}
         ${refsHtml}
-        ${tagsHtml}
         ${notesHtml}
       </article>`;
   }
