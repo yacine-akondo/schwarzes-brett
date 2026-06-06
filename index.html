@@ -526,6 +526,7 @@
     display: flex; flex-wrap: wrap; justify-content: center;
     gap: 12px; margin: 40px 0 12px;
   }
+  .filters-level { margin: 0 0 12px; }
   .filter {
     font-family: var(--font-display); font-weight: 600;
     font-size: 0.84rem; letter-spacing: 0.12em; text-transform: uppercase;
@@ -696,11 +697,17 @@
       <div class="rule"><span>✦</span></div>
     </header>
 
-    <nav class="filters" id="filters">
+    <nav class="filters" id="filters" aria-label="Filter by length">
       <button class="filter active" data-len="all">All</button>
       <button class="filter" data-len="Short">Short</button>
       <button class="filter" data-len="Medium">Medium</button>
       <button class="filter" data-len="Long">Long</button>
+    </nav>
+    <nav class="filters filters-level" id="levelFilters" aria-label="Filter by level">
+      <button class="filter active" data-level="all">All Levels</button>
+      <button class="filter" data-level="1-4">Lvl 1–4</button>
+      <button class="filter" data-level="5-7">Lvl 5–7</button>
+      <button class="filter" data-level="8-10">Lvl 8–10</button>
     </nav>
     <p class="count" id="count"></p>
 
@@ -746,7 +753,25 @@
   }
 
   /* ── Quest board ──────────────────────────────────────────────── */
-  const state = { quests: [], filter: "all", meta: null };
+  const state = { quests: [], filter: "all", level: "all", meta: null };
+
+  // Parse a level value (e.g. "3-8", "5", "Unknown") into a [min, max] range,
+  // or null when there is no numeric level to match against.
+  function levelRange(level) {
+    const range = String(level ?? "").match(/(\d+)\s*[-–—]\s*(\d+)/);
+    if (range) return [+range[1], +range[2]];
+    const single = String(level ?? "").match(/\d+/);
+    return single ? [+single[0], +single[0]] : null;
+  }
+
+  // A quest matches a level tier when its level range overlaps the tier range.
+  function matchesLevel(q, tier) {
+    if (tier === "all") return true;
+    const r = levelRange(q.level);
+    if (!r) return false;
+    const [tMin, tMax] = tier.split("-").map(Number);
+    return r[0] <= tMax && r[1] >= tMin;
+  }
 
   const escape = (s) => String(s ?? "").replace(/[&<>"']/g, c => (
     { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
@@ -821,31 +846,39 @@
 
   function render() {
     const grid = document.getElementById("grid");
-    const list = state.filter === "all"
-      ? state.quests
-      : state.quests.filter(q => q.length === state.filter);
+    const list = state.quests.filter(q =>
+      (state.filter === "all" || q.length === state.filter) &&
+      matchesLevel(q, state.level));
 
     if (!list.length) {
-      grid.innerHTML = `<p class="notice">No quests of this length posted.</p>`;
+      grid.innerHTML = `<p class="notice">No quests match these filters.</p>`;
     } else {
       grid.innerHTML = list.map(questCard).join("");
     }
 
     const total = state.quests.length;
     const shown = list.length;
-    document.getElementById("count").textContent =
-      state.filter === "all"
-        ? `${total} ${total === 1 ? "quest" : "quests"} posted`
-        : `${shown} of ${total} quests`;
+    const filtered = state.filter !== "all" || state.level !== "all";
+    document.getElementById("count").textContent = filtered
+      ? `${shown} of ${total} quests`
+      : `${total} ${total === 1 ? "quest" : "quests"} posted`;
   }
 
   function setupFilters() {
     document.getElementById("filters").addEventListener("click", (e) => {
       const btn = e.target.closest(".filter");
       if (!btn) return;
-      document.querySelectorAll(".filter").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll("#filters .filter").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
       state.filter = btn.dataset.len;
+      render();
+    });
+    document.getElementById("levelFilters").addEventListener("click", (e) => {
+      const btn = e.target.closest(".filter");
+      if (!btn) return;
+      document.querySelectorAll("#levelFilters .filter").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      state.level = btn.dataset.level;
       render();
     });
   }
