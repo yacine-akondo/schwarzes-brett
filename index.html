@@ -692,19 +692,19 @@
 
   <div class="wrap">
     <header>
-      <h1 class="crest">Quest Board</h1>
-      <p class="subtitle">Quests &amp; Bounties</p>
+      <h1 class="crest">Schwarzes Brett</h1>
+      <p class="subtitle">Quests &amp; Schätze</p>
       <div class="rule"><span>✦</span></div>
     </header>
 
     <nav class="filters" id="filters" aria-label="Filter by length">
-      <button class="filter active" data-len="all">All</button>
-      <button class="filter" data-len="Short">Short</button>
-      <button class="filter" data-len="Medium">Medium</button>
-      <button class="filter" data-len="Long">Long</button>
+      <button class="filter active" data-len="all">Alle</button>
+      <button class="filter" data-len="Short">Kurz</button>
+      <button class="filter" data-len="Medium">Mittel</button>
+      <button class="filter" data-len="Long">Lange</button>
     </nav>
     <nav class="filters filters-level" id="levelFilters" aria-label="Filter by level">
-      <button class="filter active" data-level="all">All Levels</button>
+      <button class="filter active" data-level="all">Alle Level</button>
       <button class="filter" data-level="1-4">Lvl 1–4</button>
       <button class="filter" data-level="5-7">Lvl 5–7</button>
       <button class="filter" data-level="8-10">Lvl 8–10</button>
@@ -802,21 +802,21 @@
     const prog  = Array.isArray(q.progression) ? q.progression : [];
 
     const hooksHtml = hooks.length ? `
-      <div class="section-label">Paths</div>
+      <div class="section-label">Pfade</div>
       <ol class="hooks">
         ${hooks.map(h => `<li>${escape(h.text ?? h)}</li>`).join("")}
       </ol>` : "";
 
     const rewardHtml = (q.reward && String(q.reward).trim()) ? `
-      <div class="section-label">Reward</div>
+      <div class="section-label">Belohnung</div>
       <span class="reward">${escape(q.reward)}</span>` : "";
 
     const progHtml = prog.length ? `
-      <div class="section-label">Effects</div>
+      <div class="section-label">Effekte</div>
       <div class="progs">${prog.map(progItem).join("")}</div>` : "";
 
     const charsHtml = chars.length ? `
-      <div class="section-label">Important Characters</div>
+      <div class="section-label">Wichtige Charaktere</div>
       <p class="chars">${chars.map(escape).join(" · ")}</p>` : "";
 
     const tagsHtml = tags.length ? `
@@ -829,10 +829,10 @@
 
     return `
       <article class="quest" style="animation-delay:${i * 70}ms">
-        <h2>${escape(q.title || "Untitled Quest")}</h2>
+        <h2>${escape(q.title || "Unbekannte Quest")}</h2>
         <div class="badges">
           <span class="badge level"><span class="lab">Level</span>${escape(q.level || "—")}</span>
-          <span class="badge ${lenClass(q.length)}"><span class="lab">Length</span>${escape(q.length || "—")}</span>
+          <span class="badge ${lenClass(q.length)}"><span class="lab">Länge</span>${escape(q.length || "—")}</span>
         </div>
         <p class="desc">${escape(q.description || "")}</p>
         ${rewardHtml}
@@ -851,7 +851,7 @@
       matchesLevel(q, state.level));
 
     if (!list.length) {
-      grid.innerHTML = `<p class="notice">No quests match these filters.</p>`;
+      grid.innerHTML = `<p class="notice">Keine Quests entsprechen diesen Filtern.</p>`;
     } else {
       grid.innerHTML = list.map(questCard).join("");
     }
@@ -860,8 +860,8 @@
     const shown = list.length;
     const filtered = state.filter !== "all" || state.level !== "all";
     document.getElementById("count").textContent = filtered
-      ? `${shown} of ${total} quests`
-      : `${total} ${total === 1 ? "quest" : "quests"} posted`;
+      ? `${shown} von ${total} Quests`
+      : `${total} ${total === 1 ? "Quest" : "Quests"} veröffentlicht`;
   }
 
   function setupFilters() {
@@ -887,8 +887,8 @@
     const f = document.getElementById("footer");
     if (state.meta?.generated_at) {
       const d = new Date(state.meta.generated_at);
-      f.textContent = "Last updated " +
-        d.toLocaleString("en-US", { dateStyle: "long", timeStyle: "short" });
+      f.textContent = "Zuletzt aktualisiert " +
+        d.toLocaleString("de-DE", { dateStyle: "long", timeStyle: "short" });
     }
   }
 
@@ -910,8 +910,8 @@
     } catch (err) {
       grid.innerHTML = `
         <p class="notice">
-          No quests available yet.<br />
-          Once the bot commits <code>quests.json</code>, they will appear here.<br />
+          Noch keine Quests verfügbar.<br />
+          Sobald der Bot <code>quests.json</code> einreicht, erscheinen sie hier.<br />
           <small style="opacity:.7">(${escape(err.message)})</small>
         </p>`;
     }
