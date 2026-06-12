@@ -526,7 +526,46 @@
     display: flex; flex-wrap: wrap; justify-content: center;
     gap: 12px; margin: 40px 0 12px;
   }
-  .filters-level { margin: 0 0 12px; }
+  .filters-level { margin: 0 0 12px; align-items: center; }
+
+  /* ── Level slider ───────────────────────────────────────────── */
+  .level-slider { display: flex; align-items: center; gap: 12px; }
+  .level-edge {
+    font-family: var(--font-display); font-weight: 600;
+    font-size: 0.8rem; color: var(--filter-text);
+  }
+  #levelRange {
+    -webkit-appearance: none; appearance: none;
+    width: clamp(150px, 38vw, 280px); height: 6px;
+    border-radius: 999px; background: var(--filter-border);
+    outline: none; cursor: pointer;
+  }
+  #levelRange::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--filter-active-bg);
+    border: 2px solid var(--filter-hover-border);
+    box-shadow: var(--filter-active-shadow); cursor: pointer;
+  }
+  #levelRange::-moz-range-thumb {
+    width: 20px; height: 20px; border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--filter-hover-border);
+    box-shadow: var(--filter-active-shadow); cursor: pointer;
+  }
+  .level-value {
+    font-family: var(--font-display); font-weight: 700;
+    font-size: 0.84rem; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--filter-active-text); background: var(--filter-active-bg);
+    padding: 7px 14px; border-radius: 2px; min-width: 64px; text-align: center;
+    box-shadow: var(--filter-active-shadow);
+  }
+  /* While "Alle" is active the slider is dimmed and the badge is neutral. */
+  #levelFilters:not(.level-on) .level-slider { opacity: 0.5; }
+  #levelFilters:not(.level-on) .level-value {
+    color: var(--filter-text); background: var(--filter-bg);
+    border: 1px solid var(--filter-border); box-shadow: none;
+  }
   .filter {
     font-family: var(--font-display); font-weight: 600;
     font-size: 0.84rem; letter-spacing: 0.12em; text-transform: uppercase;
@@ -728,12 +767,7 @@
       <button class="filter" data-len="Medium">Mittel</button>
       <button class="filter" data-len="Long">Lange</button>
     </nav>
-    <nav class="filters filters-level" id="levelFilters" aria-label="Filter by level">
-      <button class="filter active" data-level="all">Alle Level</button>
-      <button class="filter" data-level="1-4">Lvl 1–4</button>
-      <button class="filter" data-level="5-7">Lvl 5–7</button>
-      <button class="filter" data-level="8-10">Lvl 8–10</button>
-    </nav>
+    <nav class="filters filters-level" id="levelFilters" aria-label="Filter by level"></nav>
     <p class="count" id="count"></p>
 
     <main class="grid" id="grid">
@@ -795,13 +829,50 @@
     return single ? [+single[0], +single[0]] : null;
   }
 
-  // A quest matches a level tier when its level range overlaps the tier range.
-  function matchesLevel(q, tier) {
-    if (tier === "all") return true;
+  // A quest matches when the chosen character level falls inside its range.
+  function matchesLevel(q, level) {
+    if (level === "all") return true;
     const r = levelRange(q.level);
     if (!r) return false;
-    const [tMin, tMax] = tier.split("-").map(Number);
-    return r[0] <= tMax && r[1] >= tMin;
+    const lvl = Number(level);
+    return r[0] <= lvl && lvl <= r[1];
+  }
+
+  // A slider to pick your character level, plus an "Alle" toggle for no filter.
+  function buildLevelFilters() {
+    const nav = document.getElementById("levelFilters");
+    const min = 1, max = 20;
+
+    nav.innerHTML = `
+      <button class="filter level-all active" id="levelAll" type="button">Alle Level</button>
+      <div class="level-slider">
+        <span class="level-edge">${min}</span>
+        <input type="range" id="levelRange" min="${min}" max="${max}" step="1"
+               value="${min}" aria-label="Dein Level" />
+        <span class="level-edge">${max}</span>
+        <output class="level-value" id="levelValue">Lvl ${min}</output>
+      </div>`;
+
+    const allBtn = nav.querySelector("#levelAll");
+    const range  = nav.querySelector("#levelRange");
+    const valOut = nav.querySelector("#levelValue");
+
+    function showAll() {
+      state.level = "all";
+      allBtn.classList.add("active");
+      nav.classList.remove("level-on");
+      render();
+    }
+    function pickLevel(v) {
+      state.level = String(v);
+      valOut.textContent = "Lvl " + v;
+      allBtn.classList.remove("active");
+      nav.classList.add("level-on");
+      render();
+    }
+
+    allBtn.addEventListener("click", showAll);
+    range.addEventListener("input", () => pickLevel(range.value));
   }
 
   const escape = (s) => String(s ?? "").replace(/[&<>"']/g, c => (
@@ -938,14 +1009,6 @@
       state.filter = btn.dataset.len;
       render();
     });
-    document.getElementById("levelFilters").addEventListener("click", (e) => {
-      const btn = e.target.closest(".filter");
-      if (!btn) return;
-      document.querySelectorAll("#levelFilters .filter").forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      state.level = btn.dataset.level;
-      render();
-    });
   }
 
   function renderFooter() {
@@ -978,6 +1041,7 @@
         }
       } catch (e) { /* keep state.votes = {} */ }
 
+      buildLevelFilters();
       setupFilters();
       render();
       renderFooter();
