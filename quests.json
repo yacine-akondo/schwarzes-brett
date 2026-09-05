@@ -1,125 +1,13 @@
 {
-  "generated_at": "2026-06-20T08:31:52.692145+00:00",
-  "count": 14,
+  "generated_at": "2026-09-05T16:16:36.152444+00:00",
+  "count": 10,
   "quests": [
-    {
-      "source_message_ids": [
-        "1412498639464562830"
-      ],
-      "title": "Die Geschichten des Hässlichen",
-      "description": "Ein langer Pfad des Leides, den sich nur jemand sehr hässliches und stinkendes ausgedacht haben kann.",
-      "level": "5-7",
-      "length": "Long",
-      "reward": "",
-      "hooks": [],
-      "characters": [],
-      "progression": [
-        "Unmaking ++"
-      ],
-      "notes": "",
-      "entities": []
-    },
-    {
-      "source_message_ids": [
-        "1430180960045109368"
-      ],
-      "title": "König der Welt",
-      "description": "Der König Beiwassers ist in großer Gefahr. Nach dem Angriff des Drachens und dem Raubzug auf die Königliche Schatzkammer, ist er in großer Not. Ein Brief von dem selbsternannten \"Wahren Königs\" kündigt einen Angriff auf die Stadt an. Ohne seine Arme ist die Stadt in großer Gefahr. Verhindere die Zerstörung der Stadt.",
-      "level": "1-4",
-      "length": "Long",
-      "reward": "",
-      "hooks": [],
-      "characters": [],
-      "progression": [
-        "Unmaking ++"
-      ],
-      "notes": "Dieses Abenteuer schaltet 2 weitere Abenteuer frei",
-      "entities": [
-        {
-          "name": "Beiwasser",
-          "kanka_url": null,
-          "kind": null
-        }
-      ]
-    },
-    {
-      "source_message_ids": [
-        "1430434064308899900"
-      ],
-      "title": "Dunkelstes Verließ",
-      "description": "Eine Urtale Macht wurde entfesselt...",
-      "level": "7-9",
-      "length": "Medium",
-      "reward": "",
-      "hooks": [],
-      "characters": [],
-      "progression": [
-        "Unmaking ++",
-        "Divine Influence --"
-      ],
-      "notes": "Dieses Abenteuer erhöht das Startlevel permanent auf 3",
-      "entities": []
-    },
-    {
-      "source_message_ids": [
-        "1479167274043576443"
-      ],
-      "title": "Furchtbare Gastfreundschaft",
-      "description": "Die Stadt Bakamal feiert. Ihr letzter Sieg über die Dunkelelfen hat eine große Runde gemacht. Ihr König Nosramus hat eine Einladung von Baronin von Rosewood, welche ebenso Teil der Lords Alliance ist, erhalten, um den Erfolg in der Schlacht zu feiern. Die Streitkräfte des Königs sind verletzt und ermüdet, doch der König möchte trotzdem die Einladung annehmen. Deswegen möchte der König, dass Abenteurer ihn als Leibwachen begleiten.",
-      "level": "1-4",
-      "length": "Short",
-      "reward": "",
-      "hooks": [],
-      "characters": [
-        {
-          "name": "Nosramus",
-          "kanka_url": null,
-          "kind": null
-        },
-        {
-          "name": "Baronin von Rosewood",
-          "kanka_url": null,
-          "kind": null
-        }
-      ],
-      "progression": [
-        "Divine Influence --"
-      ],
-      "notes": "",
-      "entities": [
-        {
-          "name": "Bakamal",
-          "kanka_url": null,
-          "kind": null
-        },
-        {
-          "name": "Nosramus",
-          "kanka_url": null,
-          "kind": null
-        },
-        {
-          "name": "Baronin von Rosewood",
-          "kanka_url": null,
-          "kind": null
-        },
-        {
-          "name": "Lords Alliance",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/8593182",
-          "kind": "organisation"
-        },
-        {
-          "name": "Dunkelelfen",
-          "kanka_url": null,
-          "kind": null
-        }
-      ]
-    },
     {
       "source_message_ids": [
         "1487756172667650140"
       ],
       "title": "Straße nach Drakkenheim",
-      "description": "Drakkenheim wurde durch das Unmaking zerstört. Die Stadt war einst als das Zentrum moderner Magie bekannt. Gerüchte behaupten die Ruinen der Stadt wurden von den Mächten der Dunkelelfen Armee zurückgelassen. Die Abenteurer können verschiedene Pfade wählen: Überlebende retten, die magische Stadt erkunden, nach Schätzen und Artefakten suchen, oder sich den Purple Dragon Knights für Rache anschließen.",
+      "description": "Drakkenheim wurde durch das Unmaking zerstört. Die Stadt war einst als das Zentrum moderner Magie bekannt. Gerüchte behaupten die Ruinen der Stadt wurden von den Mächten der Dunkelelfen Armee zurückgelassen.",
       "level": "5-9",
       "length": "Short",
       "reward": "",
@@ -134,7 +22,7 @@
           "text": "Ich bin mir sicher die Dunkelelfen haben nicht alles mitgenommen. Eine ganze Stadt voll mit magischen Artefakten? Unbewachte Schatzkammern? Zurückgelassene Banktresore voller Gold?!"
         },
         {
-          "text": "Drakkenheim war einst der Ursprung der Purple Dragon Knights. Ich bin mir sicher sie werden dort sein. Zeit für Rache!"
+          "text": "Drakkenheim war einst der Ursprung der Purple Dragon Knights. Ich bin mir sicher sie werden dort sein. Zeit um Rache zu nehmen!"
         }
       ],
       "characters": [
@@ -149,19 +37,34 @@
           "kind": "character"
         },
         {
+          "name": "Dragon God Rher",
+          "kanka_url": "https://app.kanka.io/w/363682/entities/9300948",
+          "kind": "character"
+        },
+        {
           "name": "Purple Dragon Knights",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8593811",
           "kind": "organisation"
         }
       ],
       "progression": [
-        "Unmaking ++",
-        "Divine Influence ++"
+        "Unmaking++",
+        "Divine Influence++"
       ],
       "notes": "",
       "entities": [
         {
           "name": "Drakkenheim",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Forgotten Realms",
+          "kanka_url": "https://app.kanka.io/w/363682/entities/8593546",
+          "kind": "location"
+        },
+        {
+          "name": "Dunkelelfen",
           "kanka_url": null,
           "kind": null
         },
@@ -184,16 +87,6 @@
           "name": "Purple Dragon Knights",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8593811",
           "kind": "organisation"
-        },
-        {
-          "name": "Forgotten Realms",
-          "kanka_url": "https://app.kanka.io/w/363682/entities/8593546",
-          "kind": "location"
-        },
-        {
-          "name": "Dunkelelfen",
-          "kanka_url": null,
-          "kind": null
         }
       ]
     },
@@ -202,8 +95,8 @@
         "1490283345911873616"
       ],
       "title": "Eine simple Hafenquest",
-      "description": "Euer Abenteuer hat euch an die Grenzen des Kontinents an einen kleinen namenlosen Hafen gebracht. Ein einfacher Händler, Old Man Bhan braucht jemanden, der für eine Nacht auf seine Fracht aufpasst. Eine Möglichkeit für schnelles Geld, oder?",
-      "level": "Unknown",
+      "description": "Eurer Abenteuer hat euch an die Grenzen des Kontinents an einen kleinen namenlosen Hafen gebracht. Ein einfacher Händler, Old Man Bhan braucht jemanden, der für eine Nacht auf seine Fracht aufpasst. Eine Möglichkeit für schnelles Geld, oder?",
+      "level": "1-3",
       "length": "Medium",
       "reward": "",
       "hooks": [],
@@ -215,7 +108,7 @@
         }
       ],
       "progression": [],
-      "notes": "Dieses Abenteuer kann (semi-)permanente Auswirkungen auf die Zhentarim haben",
+      "notes": "Dieses Abenteuer kann (semi-) permanente Auswirkungen auf die Zhentarim haben",
       "entities": [
         {
           "name": "Old Man Bhan",
@@ -234,14 +127,14 @@
         "1490284103348523080"
       ],
       "title": "Im Schlangennest",
-      "description": "Durch die herausragende Arbeit zweier Agenten der Lord's Alliance konnte eine Mine der Zhentarim ausfindig gemacht werden. Es wäre doch schade, wenn ein paar Abenteurer zufällig auf diese Mine stoßen würden und sie von den Klauen dieser Banditen befreien würden.",
+      "description": "Durch die herausragende Arbeit zweier unserer Agenten konnte eine Mine der Zhentarim ausfindig gemacht werden. Es wäre doch schade, wenn ein paar Abenteurer zufällig auf diese Mine stoßen würden und sie von den Klauen dieser Banditen befreien würden.",
       "level": "3-5",
       "length": "Short",
       "reward": "",
       "hooks": [],
       "characters": [],
       "progression": [],
-      "notes": "",
+      "notes": "Ein Brief mit dem Siegel der Lord's Alliance",
       "entities": [
         {
           "name": "Lord's Alliance",
@@ -263,16 +156,16 @@
       "description": "Die Spiele beginnen! Auch in diesen dunklen Zeiten bietet das Haus Clawthorne die Owl Games an. Abenteurer, Söldner und sogar der ein oder andere Adliger nehmen an diesen Spielen teil. Nicht nur für Prestige und Reichtum, sondern auch um einen Blick auf das legendäre Haus der Eulen zu erlangen.",
       "level": "3-8",
       "length": "Medium",
-      "reward": "Ein eigenes Stück Land und ein erhebliches Startkapital für die Sieger. Perfekt für eine eigene Basis",
+      "reward": "Ein eigenes Stück Land und ein erhebliches Startkapital",
       "hooks": [
         {
-          "text": "Eine Einladung zu den Owl Games?! Nur ein Idiot würde diese Einmal-im-Leben Gelegenheit ausschlagen. Natürlich nimmst du Teil. Solange man nichts zwielichtiges untertreibt, besteht immerhin keine Gefahr."
+          "text": "Eine Einladung zu den Owl Games?! Nur ein Idiot würde diese Einmal-im-Leben Gelegenheit ausschlagen Natürlich nimmst du Teil. Solange man nichts zwielichtiges untertreibt, besteht immerhin keine Gefahr."
         },
         {
-          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Die Herkunft jeder Münze ist sorgfältig dokumentiert und sogar versteuert... Deine Auftraggeberin glaubt den Clawthornes nicht für eine Sekunde. Nimm an den Spielen teil und freue dich, für jede belastende Information die du zu den Clawthornes findest, auf deine Belohnung."
+          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Die Herkunft jeder Münze ist sorgfältig dokumentiert und sogar versteuert... Deine Auftraggeberin glaubt den Clawthornes nicht für eine Sekunde. Nimm an den Spielen teil und freue dich, für jede belastende Inforamation die du zu den Clawthornes findest, auf deine Belohnung."
         },
         {
-          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Einen Reichtum, der nur darauf wartet, ausgegeben zu werden."
+          "text": "Das Haus Clawthorne besitzt einen unheimlich hohen Reichtum. Einen Reichtum, der nur darauf wartet, ausgegeben zu werden. *Hehehe…*"
         }
       ],
       "characters": [
@@ -301,6 +194,11 @@
           "kind": "organisation"
         },
         {
+          "name": "Owl Games",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
           "name": "Alanius von Druselstein",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8593365",
           "kind": "character"
@@ -322,19 +220,19 @@
         "1496908574859726901"
       ],
       "title": "Auf halbem Weg in die Ewigkeit",
-      "description": "Die Ereignisse in der Nähe Balericas spitzen sich zu. Deine Abenteurerfreunde berichten von beunruhigenden Ereignissen, dass du kaum noch mitkommst. Sie scheinen irgendwie zusammenzuhängen, du weißt nur noch nicht wie. Nur eines weißt du: Ein Warforged namens Terminus steht im Mittelpunkt. Mittlerweile erkennt die Gilde auch eine Gefahr und verlässt sich auf euch renommierte Abenteurer, dieses Rätsel zu lüften.",
+      "description": "Die Ereignisse in der Nähe Balericas spitzen sich zu. Deine Abenteurerfreunde berichten von beunruhigenden Ereignissen, dass du kaum noch mitkommst. Sie scheinen irgendwie zusammenzuhängen, du weißt nur noch nicht wie. Nur eines weißt du: Ein Warforged namens Terminus steht im Mittelpunkt. Mittlerweile erkennt die Gilde auch eine Gefahr und verlässt sich auf euch renommierte Abenteurer, dieses Rätsel zu lüften. Ihr müsst nur noch abstimmen, wie ihr an die Sache rangehen wollt.",
       "level": "5-9",
       "length": "Long",
       "reward": "",
       "hooks": [
         {
-          "text": "Terminus ist Mitglied bei den Flaming Fists?! Da muss irgendein größerer Plan hinterstecken. Wie gut, dass Dragobeet Jr. bald einen Teamwettkampf ausrichtet. Gerüchte sagen, dass der Sieger einen Wunsch Dragobeet Jr. persönlich erfüllt bekommt. Zudem wurde bestätigt, dass alle Flaming Fists an diesem Turnier teilnehmen."
+          "text": "Terminus ist Mitglied bei den Flaming Fists?! Da muss irgendein größerer Plan hinterstecken. Wie gut, dass Dragobeet Jr. bald einen Teamwettkampf ausrichtet. Gerüchte sagen, dass der Sieger einen Wunsch Dragobeet Jr. persönlich erfüllt bekommt. Zudem wurde bestätigt, dass alle Flaming Fists an diesem Turnier teilnehmen. Klingt nach einem super weg, dem Geheimnis etwas näher zu kommen und den Turnierpreis abzusahnen."
         },
         {
-          "text": "Auf den Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Und wie der Zufall es so will gab es in den letzten Tagen vermehrt Augenzeugenberichte von der Sichtung von einer Dämonin. Egal was sie will, es kann ja wohl nichts wohlwollendes sein. Du kannst sie aufhalten und ihr Kopfgeld bei der Gilde abholen."
+          "text": "Auf den Gesucht-Plakaten ist die Rede von einer Dämonin, welche mit Terminus kooperiert. Und wie der Zufall es so will gab es in den letzten Tagen vermehrt Augenzeugenberichte von der Sichtung von einer Dämonin. Egal was sie will, es kann ja wohl nichts wohlwollendes sein. Du kannst sie aufhalten und ihr Kopfgeld bei der Gilde abholen. Perfekter Plan, oder?"
         },
         {
-          "text": "War da nicht dieses Buch voller hochkomplizierter Formeln, die keiner entziffern kann und das Terminus unbedingt haben wollte? Ich meine wenn irgendwer seinen Inhalt verstehen kann, dann ja wohl Prof. Timur höchstpersönlich! Vielleicht hat er was neues herausgefunden. Wir sollten ihm einen Besuch abstatten."
+          "text": "War da nicht dieses Buch voller hochkomplizierter Formeln, die keiner entziffern kann und das Terminus unbedingt haben wollte? Ich meine wenn irgendwer seinen Inhalt verstehen kann, dann ja wohl Prof. Timur höchstpersönlich! Vielleicht hat er was neues herausgefunden. Wir sollten ihm einen Besuch abstatten. Und vielleicht können wir ihm ja helfen und so etwas gut haben bei ihm?"
         }
       ],
       "characters": [
@@ -358,7 +256,7 @@
       "notes": "Das hier Gewählte hat Einfluss auf den Verlauf der Story. Das Abenteuer bleibt bestehen, solange nicht alle Punkte abgearbeitet worden. Welche Pfade bestritten worden, hat Einfluss auf die anderen Pfade.",
       "entities": [
         {
-          "name": "Balericas",
+          "name": "Balerica",
           "kanka_url": "https://app.kanka.io/w/363682/entities/9211336",
           "kind": "location"
         },
@@ -399,10 +297,15 @@
           "name": "Admindium",
           "kanka_url": null,
           "kind": null
+        },
+        {
+          "name": "Vampire",
+          "kanka_url": "https://app.kanka.io/w/363682/entities/8593319",
+          "kind": "race"
         }
       ],
       "progression": [
-        "Conviction ++"
+        "Conviction++"
       ],
       "notes": "",
       "entities": [
@@ -433,11 +336,20 @@
           "name": "Pash Ugnel",
           "kanka_url": null,
           "kind": null
+        },
+        {
+          "name": "Green Hags",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Vampire",
+          "kanka_url": "https://app.kanka.io/w/363682/entities/8593319",
+          "kind": "race"
         }
       ],
       "progression": [
-        "Divine Influence --",
-        "Divine Influence ++"
+        "Divine Influence-- oder Divine Influence++"
       ],
       "notes": "",
       "entities": [
@@ -447,12 +359,17 @@
           "kind": null
         },
         {
+          "name": "Fewin",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
           "name": "Waterdeep",
           "kanka_url": "https://app.kanka.io/w/363682/entities/8608441",
           "kind": "location"
         },
         {
-          "name": "Fewin",
+          "name": "Green Hags",
           "kanka_url": null,
           "kind": null
         }
@@ -463,7 +380,7 @@
         "1508180096085786815"
       ],
       "title": "Geschichten von Anderswo: Daggerheart",
-      "description": "Der Sablewood ist ein uralter, gewaltiger Wald aus Bäumen, die sich Hunderte von Fuß hoch in den Himmel erheben. Man sagt, er sei älter als die Vergessenen Götter selbst. Dieses dichte Gehölz ist im gesamten Reich der Sterblichen bekannt, und viele Besucher stellen überrascht fest, dass die Geschichten, die sie für übertriebene Legenden hielten, in Wahrheit erschreckend real sind. So weit das Auge reicht und noch weit darüber hinaus erstreckt sich ein endloses Meer aus Grün. Das Blätterdach ist so dicht, dass Reisende oft nicht erkennen können, ob Tag oder Nacht herrscht, und darauf achten müssen, ihren Weg nicht zu verlieren.",
+      "description": "Der Sablewood ist ein uralter, gewaltiger Wald aus Bäumen, die sich Hunderte von Fuß hoch in den Himmel erheben. Man sagt, er sei älter als die Vergessenen Götter selbst. Dieses dichte Gehölz ist im gesamten Reich der Sterblichen bekannt, und viele Besucher stellen überrascht fest, dass die Geschichten, die sie für übertriebene Legenden hielten, in Wahrheit erschreckend real sind. So weit das Auge reicht und noch weit darüber hinaus erstreckt sich ein endloses Meer aus Grün. Das Blätterdach ist so dicht, dass Reisende oft nicht erkennen können, ob Tag oder Nacht herrscht, und darauf achten müssen, ihren Weg nicht zu verlieren. Wer sich durch die Baumwipfel bewegt, könnte mühelos von einem Ende des Sablewood zum anderen gelangen, ohne jemals den Waldboden zu berühren.",
       "level": "Unknown",
       "length": "Medium",
       "reward": "",
@@ -481,6 +398,11 @@
           "name": "Vergessene Götter",
           "kanka_url": null,
           "kind": null
+        },
+        {
+          "name": "Reich der Sterblichen",
+          "kanka_url": null,
+          "kind": null
         }
       ]
     },
@@ -489,7 +411,7 @@
         "1508182159121453087"
       ],
       "title": "Geschichten von Anderswo: DSA",
-      "description": "Während das Mittelreich gegen den Fürstkomtur Helme Haffax zieht, kämpft Festum, die Handelsstadt am Perlenmeer, im Phex 1038 BF mit ganz eigenen Problemen. Altes Brauchtum wird zum Zankapfel und die überlieferte Tradition der Atmaskottjenumzüge scheint die Stadt zu spalten. Besonders die mit Menschenhaut bespannte Thorwalertrommel erhitzt die Gemüter und bald offenbaren sich tiefe Gräben zwischen den verschiedenen Bevölkerungsgruppen. Goblins, Thorwaler, Norbarden, Maraskaner und alteingesessene Festumer kamen bisher miteinander aus. Doch nun scheint die Harmonie empfindlich bedroht. Gardehauptmann Timpski setzt seine Hoffnungen in eine Gruppe gewitzter Helden, die das Unglück abwenden und die Wogen glätten sollen.",
+      "description": "Während das Mittelreich gegen den Fürstkomtur Helme Haffax zieht, kämpft Festum, die Handelsstadt am Perlenmeer, im Phex 1038 BF mit ganz eigenen Problemen. Altes Brauchtum wird zum Zankapfel und die überlieferte Tradition der Atmaskottjenumzüge scheint die Stadt zu spalten. Besonders die mit Menschenhaut bespannte Thorwalertrommel erhitzt die Gemüter und bald offenbaren sich tiefe Gräben zwischen den verschiedenen Bevölkerungsgruppen, die bisher der Stadt ihr unverwechselbares, weltoffenes Gesicht verliehen haben. Goblins, Thorwaler, Norbarden, Maraskaner, dazwischen die alteingesessenen Festumer und jene, die sich dafür halten, sie alle kamen bisher miteinander aus. Doch nun scheint die Harmonie empfindlich bedroht und was eigentlich ein harmloser Festumzug werden sollte, wächst sich zur Krise für die Stadt und ihre Zukunft aus. Angesichts von aufgebrachten Bürgern, Raufbolden, Saboteuren und politischen Winkelzügen setzt Gardehauptmann Timpski seine Hoffnungen in eine Gruppe gewitzter Helden, die das Unglück abwenden und die Wogen glätten sollen. Fingerspitzengefühl, Einfallsreichtum, List und auch eine gute Portion Muskeln sind von Nöten, um dem rauen Wind zu widerstehen, der durch die Gassen der bornländischen Metropole pfeift. Schließlich steht die Sicherheit einer ganzen Stadt auf dem Spiel und am Ende zählt nur eins: Wer kann die berüchtigte Thorwalertrommel an sich bringen und in Zukunft die Geschicke der Stadt lenken?",
       "level": "Unknown",
       "length": "Medium",
       "reward": "",
@@ -502,7 +424,7 @@
         }
       ],
       "progression": [],
-      "notes": "Die Sicherheit einer ganzen Stadt steht auf dem Spiel. Am Ende zählt nur eines: Wer kann die berüchtigte Thorwalertrommel an sich bringen und in Zukunft die Geschicke der Stadt lenken?",
+      "notes": "",
       "entities": [
         {
           "name": "Mittelreich",
@@ -525,12 +447,17 @@
           "kind": null
         },
         {
-          "name": "Gardehauptmann Timpski",
+          "name": "Atmaskottjenumzüge",
           "kanka_url": null,
           "kind": null
         },
         {
           "name": "Thorwalertrommel",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Gardehauptmann Timpski",
           "kanka_url": null,
           "kind": null
         }
@@ -546,7 +473,18 @@
       "length": "Short",
       "reward": "Große Mengen an Geld",
       "hooks": [],
-      "characters": [],
+      "characters": [
+        {
+          "name": "Elementals",
+          "kanka_url": null,
+          "kind": null
+        },
+        {
+          "name": "Aberratios",
+          "kanka_url": null,
+          "kind": null
+        }
+      ],
       "progression": [],
       "notes": "Achtung Goofy",
       "entities": [
